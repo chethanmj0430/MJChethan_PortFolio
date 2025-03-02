@@ -160,7 +160,7 @@
   }
 
   .profile-container {
-    width: 67vh;
+    width: 36vh;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -218,7 +218,7 @@
   }
 
   .profile-container {
-    width: 52vh;
+    width: 28vh;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -261,7 +261,7 @@
   }
 
   .profile-container {
-    width: 46vh;
+    width: 23vh;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -276,5 +276,64 @@
     width: 22px;
     height: 22px;
     padding: 6px;
+  }
+}
+@media (max-width: 360px) {
+  .portfolio-container {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+  }
+
+  .contact-button {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+    margin-top: 3rem;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .portfolio-card {
+    padding: 0.8rem;
+  }
+
+  .profile-container {
+    width: 28vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-icons {
+    gap: 10px;
+    padding: 8px;
+  }
+
+  .social-icon {
+    width: 25px;
+    height: 25px;
+    padding: 8px;
+  }
+
+  .separator {
+    height: 20px;
+  }
+
+  .footer {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+  }
+
+  .email {
+    font-size: 0.8rem;
   }
 }
