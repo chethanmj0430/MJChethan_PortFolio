@@ -1,12 +1,9 @@
 .portfolio-container {
     text-align: center;
-    color: white;
+    color: #E6E6E6;
     padding: 2rem;
     background: #141414;
     padding: 4rem 2rem;
-    border-radius: 20px;
-    max-width: 1000px;
-    margin: 2rem auto;
   }
   
   .title {
@@ -25,7 +22,7 @@
     margin-top: 5rem;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
     backdrop-filter: blur(10px);
-    color: white;
+    color: #E6E6E6;
     padding: 12px 24px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
@@ -35,7 +32,7 @@
   }
   
   .contact-button:hover {
-    background: white;
+    background: #E6E6E6;
     color: black;
   }
   
@@ -123,7 +120,6 @@
     backdrop-filter: blur(10px);
     transition: background 0.3s ease-in-out;
 }
-Fixed_UI_action
 
 .social-icons:hover {
     background: rgba(255, 255, 255, 0.2);
@@ -165,7 +161,7 @@ Fixed_UI_action
     }
   
     .profile-container {
-      width: 30vh;
+      width: 36vh;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -223,7 +219,7 @@ Fixed_UI_action
     }
   
     .profile-container {
-      width: 25vh;
+      width: 28vh;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -266,7 +262,7 @@ Fixed_UI_action
     }
   
     .profile-container {
-      width: 22vh;
+      width: 23vh;
       left: 50%;
       transform: translateX(-50%);
     }

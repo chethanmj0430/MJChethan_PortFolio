@@ -1,51 +1,119 @@
 
 .container {
   text-align: center;
-  color: white;
+  color: #E6E6E6;
   background: #121212;
   padding: 20px;
 }
 
 .skills {
+  background-color: #2c2a2a;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 20px;
+  padding: 30px
 }
 
 .skill-badge {
-  background: #333;
+  background: #000000;
   color: #9C9C9C;
   padding: 5px 15px;
   border-radius: 20px;
   font-size: 14px;
   display: inline-block;
 }
-
-.experience-table {
+.experience-container {
   width: 100%;
-  margin-top: 20px;
+  margin: 0 auto;
+}
+
+.experience-card {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(44, 42, 42);
+  margin-top: 40px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.side-by-side {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.company {
+  display: inline-block;
+  background-color: #000000;
+  color: #E6E6E6;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+
+  .company-link {
+    color: #9C9C9C;
+    text-decoration: none;
+    font-size: 20px;
+
+  }
+}
+
+.role-duration {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
   color: #9C9C9C;
-  background-color: #333;
+  gap: 10px;
+
+  .role {
+    display: inline-block;
+    background-color: #000000;
+    padding: 8px 12px;
+    border-radius: 20px;
+  }
+
+  .date {
+    font-style: italic;
+    color: #9C9C9C;
+    display: inline-block;
+    background-color: #000000;
+    padding: 8px 12px;
+    border-radius: 20px;
+  }
 }
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
-  .skills {
-    gap: 8px;
+  .side-by-side {
+    gap: 20px;
   }
-  
+
+  .experience-card {
+    margin-top: 30px;
+    padding: 12px;
+  }
+
+  .skills {
+    padding: 25px;
+  }
+
   .skill-badge {
     font-size: 13px;
     padding: 4px 12px;
   }
-
-  .experience-table {
-    font-size: 14px;
-  }
 }
 
+/* 📌 Tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .skills {
     flex-direction: column;
@@ -53,20 +121,32 @@
   }
 
   .skill-badge {
-    width: auto;
-    text-align: center;
     font-size: 12px;
     padding: 3px 10px;
   }
 
-  .experience-table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-    font-size: 13px;
+  .side-by-side {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .half-width {
+    width: 100%;
+  }
+
+  .company-link {
+    font-size: 18px;
+  }
+
+  .role-duration {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 
+/* 📌 Mobile (max-width: 480px) */
 @media (max-width: 480px) {
   .container {
     padding: 15px;
@@ -74,6 +154,7 @@
 
   .skills {
     gap: 6px;
+    padding: 20px;
   }
 
   .skill-badge {
@@ -81,9 +162,21 @@
     padding: 3px 8px;
   }
 
-  .experience-table {
-    font-size: 12px;
-    width: 100%;
-    overflow-x: auto;
+  .side-by-side {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-card {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .company-link {
+    font-size: 16px;
+  }
+
+  .role-duration {
+    font-size: 16px;
   }
 }

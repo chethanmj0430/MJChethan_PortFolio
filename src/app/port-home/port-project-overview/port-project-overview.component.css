@@ -1,7 +1,7 @@
 .container {
     text-align: center;
     background-color: #000;
-    color: #fff;
+    color: #E6E6E6;
     padding: 40px;
     overflow: hidden;
   }
@@ -21,8 +21,8 @@
 
   .project-card {
     margin: 20px;
-    background: #111;
-    color: white;
+    background: #000000;
+    color: #E6E6E6;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     flex-shrink: 0;
