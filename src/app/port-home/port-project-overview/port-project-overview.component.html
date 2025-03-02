@@ -1,0 +1,19 @@
+<div class="container">
+  <h2 class="title">My Latest <i>Projects</i></h2>
+  <mat-card class="project-card">
+    <img mat-card-image [src]="currentProject.img" alt="Project Image">
+    <div class="card-footer">
+      <mat-chip-listbox>
+        <mat-chip color="primary" selected>{{ currentProject.tech1 }}</mat-chip>
+        <mat-chip color="accent" selected>{{ currentProject.tech2 }}</mat-chip>
+      </mat-chip-listbox>          
+    </div>
+  </mat-card>
+  <div class="contact-container">
+    <button mat-raised-button class="contact-button" (click)="projectDetails()">
+        <mat-icon class="sloped-arrow">arrow_forward</mat-icon>
+        See All
+    </button>
+</div>
+</div>
+

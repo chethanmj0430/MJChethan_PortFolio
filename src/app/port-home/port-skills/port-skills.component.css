@@ -1,0 +1,89 @@
+
+.container {
+  text-align: center;
+  color: white;
+  background: #121212;
+  padding: 20px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.skill-badge {
+  background: #333;
+  color: #9C9C9C;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.experience-table {
+  width: 100%;
+  margin-top: 20px;
+  color: #9C9C9C;
+  background-color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .skills {
+    gap: 8px;
+  }
+  
+  .skill-badge {
+    font-size: 13px;
+    padding: 4px 12px;
+  }
+
+  .experience-table {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-badge {
+    width: auto;
+    text-align: center;
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+
+  .experience-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  .skills {
+    gap: 6px;
+  }
+
+  .skill-badge {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+
+  .experience-table {
+    font-size: 12px;
+    width: 100%;
+    overflow-x: auto;
+  }
+}

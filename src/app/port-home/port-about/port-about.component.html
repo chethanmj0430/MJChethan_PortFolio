@@ -1,0 +1,34 @@
+<div class="container">
+    <section class="intro">
+      <h3 class="section-title" style="position: relative; top: 70px;">Who is Chethan M J ?</h3>
+      <div class="profile">
+        <img src="assets/Icons/MJ2.jpeg" alt="Chethan M J" class="profile-image" />
+        <div class="bio">
+          <h1>FrontEnd Developer <span>(Angular, React)</span></h1>
+          <p>
+            Chethan M J is a skilled Front-End Developer with 3.5+ years of experience specializing in Angular and UI/Web development.
+            He has expertise in building responsive interfaces, optimizing performance, and integrating authentication using Keycloak.
+            At Prodapt Solutions, he has contributed to automation platforms, dashboard visualizations, and improving authentication processes.
+            He is proficient in Angular, React, TypeScript, and modern web technologies, with a strong focus on performance optimization and user experience.
+          </p>
+          <button mat-button class="action-btn">👤 Chethan MJ</button>
+        </div>
+      </div>
+    </section>
+  
+    <section class="faq">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      
+        <div class="faq-item" *ngFor="let faq of faqs; let i = index">
+          <div class="faq-question" (click)="toggleFaq(i)">
+            <h3>{{ faq.question }}</h3>
+            <span class="toggle-icon">{{ faq.isOpen ? '-' : '+' }}</span>
+          </div>
+          <p class="faq-answer" *ngIf="faq.isOpen">
+            {{ faq.answer }}
+          </p>
+        </div>
+      </section>
+      
+  </div>
+  

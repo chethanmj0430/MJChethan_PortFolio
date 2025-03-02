@@ -1,0 +1,154 @@
+.container {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    overflow: hidden;
+  }
+
+  .slider-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider {
+    display: flex;
+    width: 400%;
+    animation: slide 8s linear infinite;
+  }
+
+  .project-card {
+    margin: 20px;
+    background: #111;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
+  }
+
+  .project-card img {
+    width: 100%; 
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+  }
+
+  .contact-button {
+    position: relative;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    background: #E6E6E6;
+    color: #000000;
+    border-radius: 100px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    transition: background 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.contact-button:hover {
+    background: #E6E6E6;
+    box-shadow: #9C9C9C;
+}
+
+.sloped-arrow {
+    position: relative;
+    top: 5px;
+    font-size: 20px;
+    transform: rotate(300deg) translateY(-1px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-button:hover .sloped-arrow {
+    transform: rotate(90deg) translate(5px, -3px);
+}
+.contact-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-container::before {
+    content: "";
+    position: absolute;
+    width: 1000px;
+    height: 150px;
+    background: #171717;
+    border-radius: 80px;
+    filter: blur(40px);
+    z-index: -1;
+}
+
+.down-arrow {
+    position: relative;
+    top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .project-card img {
+      height: 450px;
+  }
+
+  .contact-button {
+      font-size: 14px;
+      padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider {
+      width: 300%;
+  }
+
+  .project-card img {
+      height: 400px;
+  }
+
+  .contact-button {
+      font-size: 14px;
+      padding: 8px 18px;
+  }
+
+  .contact-container::before {
+      width: 700px;
+      height: 120px;
+      filter: blur(30px);
+  }
+}
+
+@media (max-width: 480px) {
+  .slider {
+      width: 200%;
+  }
+
+  .project-card {
+      margin: 10px;
+  }
+
+  .project-card img {
+      height: 250px;
+  }
+
+  .contact-button {
+      font-size: 12px;
+      padding: 7px 15px;
+  }
+
+  .contact-container::before {
+      width: 500px;
+      height: 100px;
+      filter: blur(20px);
+  }
+}

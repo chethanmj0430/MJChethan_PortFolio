@@ -1,0 +1,42 @@
+<app-port-menu></app-port-menu>
+<div class="portfolio-container">
+    <h2 class="title">The Crafted <i>Projects</i></h2>
+    <p class="subtitle">A showcase of <strong>innovation</strong> built with precision and creativity</p>
+    
+  
+    <div class="portfolio-grid">
+      <div *ngFor="let item of portfolioItems" class="portfolio-card">
+        <img [src]="item.image" [alt]="item.title" class="portfolio-image" />
+        <div class="portfolio-content">
+          <h3>{{ item.title }}</h3>
+          <p class="tags">{{ item.tags.join(' • ') }}</p>
+          <p class="description">{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer">
+      <h3>Let's Stay <i>Connected</i></h3>
+      <p>Got questions? Feel free to reach out!</p>
+      <div class="profile-container">
+        <div class="social-icons">
+            <a href="https://github.com/chethanmj0430" target="_blank">
+                <img src="assets/Icons/github.png" alt="GitHub" class="social-icon">
+            </a>
+            <span class="separator">|</span>
+            <a href="https://www.linkedin.com/in/chethanmj04/" target="_blank">
+                <img src="assets/Icons/linkedin.png" alt="LinkedIn" class="social-icon">
+            </a>
+            <span class="separator">|</span>
+            <a href="mailto:your.chethanmj0430@gmail.com">
+                <img src="assets/Icons/email.png" alt="Email" class="social-icon">
+            </a>   
+        </div> 
+    </div>
+      <button class="contact-button">
+        <mat-icon class="sloped-arrow">arrow_forward</mat-icon>
+        Contact Me</button>
+      <p class="email">chethanmj0430&#64;gmail.com</p>
+    </div>
+  </div>
+  

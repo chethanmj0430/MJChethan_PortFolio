@@ -1,0 +1,40 @@
+<div class="about-container mat-elevation-z4">
+    <div class="about-text">
+        <h2>More about <i>myself</i></h2>
+        <p>
+          I am a Front-End Developer with over 3.5 years of experience, 
+          specializing in Angular and UI/Web development. 
+          Passionate about crafting intuitive, high-performance applications, 
+          I thrive on turning complex problems into seamless digital experiences.
+        </p>
+        <p>
+          My expertise spans JavaScript (ES6+), TypeScript, Angular, and 
+          modern web frameworks like React and Vue.js. 
+          I have a strong foundation in REST APIs, GraphQL, Firebase, 
+          and MySQL, enabling me to build scalable and interactive applications.
+        </p>
+        <p>Beyond my professional work, I am passionate about Front End development, 
+          open-source contributions, and building innovative side projects. 
+          I have developed a YouTube clone, a LinkedIn clone, and a portfolio 
+          website, showcasing my ability to design and build complete web 
+          applications from scratch.</p>
+        <p>When I’m not coding, you’ll find me exploring emerging tech trends, 
+          refining my problem-solving skills on LeetCode & HackerRank, 
+          or brainstorming new project ideas. I believe in continuous learning, 
+          adaptability, and writing clean, maintainable code that delivers 
+          exceptional user experiences.</p>
+
+        <button mat-raised-button class="contact-button" (click)="navigateToSection('contact-section')">
+            <mat-icon class="sloped-arrow">arrow_forward</mat-icon>
+        Contact Me
+        </button>
+    </div>
+  
+    <!-- Image Flip Container -->
+    <div class="flip-container">
+      <div class="flip-box" *ngFor="let image of images; let i = index" [class.active]="i === currentIndex">
+        <img [src]="image" alt="Portfolio Image" />
+      </div>
+    </div>
+  </div>
+  

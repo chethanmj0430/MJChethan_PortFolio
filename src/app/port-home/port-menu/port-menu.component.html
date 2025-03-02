@@ -1,0 +1,20 @@
+<mat-toolbar color="primary" class="toolbar">
+    <button class="title-btn" (click)="homePage()">MJ Chethan</button>
+    <span class="spacer"></span>
+    <nav class="nav-links">
+      <a mat-button class="nav-link" (click)="projectPage()">Projects</a>
+      <a mat-button class="nav-link" (click)="navigateToSection('skills-section')">Skills</a>
+      <a mat-button class="nav-link" (click)="navigateToSection('skills-section')">Experience</a>
+      <a mat-button class="nav-link" (click)="navigateToSection('contact-section')">Contact</a>
+    </nav>
+    <button mat-icon-button (click)="toggleMenu()" class="menu-btn">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar>
+  <div *ngIf="isMenuOpen" class="mobile-menu">
+    <a mat-button class="nav-link" (click)="toggleMenu(); projectPage()">Projects</a>
+    <a mat-button class="nav-link" (click)="toggleMenu(); navigateToSection('skills-section')">Skills</a>
+    <a mat-button class="nav-link" (click)="toggleMenu(); navigateToSection('skills-section')">Experience</a>
+    <a mat-button class="nav-link" (click)="toggleMenu(); navigateToSection('contact-section')">Contact</a>
+  </div>
+  

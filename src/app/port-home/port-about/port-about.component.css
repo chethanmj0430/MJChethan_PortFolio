@@ -1,0 +1,252 @@
+.container {
+    margin: auto;
+    padding: 20px;
+    color: #E6E6E6;
+    background: #000000;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+    position: relative;
+    right: 560px;
+  }
+  
+  .profile {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    gap: 60px;
+  }
+  
+  .profile-image {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .bio h1 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .bio span {
+    font-style: italic;
+    color: gray;
+  }
+  
+  .bio p {
+    font-size: 16px;
+    margin: 10px 0;
+    font-style: italic;
+  }
+  
+  .action-btn, .contact-btn {
+    background: #333;
+    color: #E6E6E6;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .action-btn:hover, .contact-btn:hover {
+    background: #555;
+  }
+  
+  .faq {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background: #1c1c1c;
+    border-radius: 10px;
+  }
+  
+  .faq-item {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .faq-question h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c8ae85;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  .toggle-icon {
+    font-size: 22px;
+    font-weight: bold;
+    color: #E6E6E6;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-answer {
+    font-size: 16px;
+    color: #959595;
+    margin-top: 10px;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 1366px) {
+    .profile {
+        padding: 40px;
+        gap: 40px;
+    }
+
+    .profile-image {
+        width: 350px;
+        height: auto;
+    }
+
+    .bio h1 {
+        font-size: 26px;
+    }
+
+    .bio p {
+        font-size: 15px;
+    }
+
+    .action-btn, .contact-btn {
+        font-size: 15px;
+        padding: 10px 14px;
+    }
+}
+
+  @media (max-width: 1024px) {
+    .section-title {
+        right: 0;
+        text-align: center;
+    }
+
+    .profile {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .profile-image {
+        width: 80%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .bio h1 {
+        font-size: 24px;
+    }
+
+    .bio p {
+        font-size: 14px;
+    }
+
+    .action-btn, .contact-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .faq {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .profile-image {
+        width: 90%;
+    }
+
+    .bio h1 {
+        font-size: 22px;
+    }
+
+    .bio p {
+        font-size: 14px;
+    }
+
+    .action-btn, .contact-btn {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .faq-item {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .faq-question h3 {
+        font-size: 18px;
+    }
+
+    .toggle-icon {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .profile {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .profile-image {
+        width: 100%;
+    }
+
+    .bio h1 {
+        font-size: 20px;
+    }
+
+    .bio p {
+        font-size: 13px;
+    }
+
+    .action-btn, .contact-btn {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    .faq {
+        padding: 10px;
+    }
+
+    .faq-question h3 {
+        font-size: 16px;
+    }
+
+    .toggle-icon {
+        font-size: 18px;
+    }
+}

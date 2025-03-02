@@ -1,0 +1,9 @@
+<app-port-menu 
+    (navigateToSkills)="scrollToSection('skills-section')" 
+    (navigateToContact)="scrollToSection('contact-section')"></app-port-menu>
+<app-port-landing (navigateToContact)="scrollToSection('contact-section')"></app-port-landing>
+<app-port-content (navigateToContact)="scrollToSection('contact-section')"></app-port-content>
+<app-port-about></app-port-about>
+<app-port-project-overview></app-port-project-overview>
+<app-port-skills id="skills-section"></app-port-skills>
+<app-port-footer id="contact-section"></app-port-footer>
