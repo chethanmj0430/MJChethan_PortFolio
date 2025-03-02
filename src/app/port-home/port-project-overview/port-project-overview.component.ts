@@ -19,8 +19,8 @@ export class PortProjectOverviewComponent {
   projects = [
     { img: 'assets/Icons/linkedin mockup.jpg', tech1: 'Angular', tech2: 'Next.js' },
     { img: 'assets/Icons/youtube mockup.jpg', tech1: 'Angular', tech2: 'Spring Boot Java' },
-    { img: 'assets/Icons/gym mockup.avif', tech1: 'Angular', tech2: 'Material UI' },
-    { img: 'assets/Icons/specch mockup.jpg', tech1: 'Python', tech2: 'AI & ML' }
+    { img: 'assets/Icons/gymimage.jpg', tech1: 'Angular', tech2: 'Material UI' },
+    { img: 'assets/Icons/speechimage.jpg', tech1: 'Python', tech2: 'AI & ML' }
   ];
   
   currentIndex = 0;

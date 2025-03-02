@@ -9,8 +9,8 @@
     text-align: center;
     font-size: 24px;
     font-style: italic;
-    position: relative;
-    right: 560px;
+    display: block;
+    margin: 60px auto 0 auto;
   }
   
   .profile {
@@ -250,3 +250,63 @@
         font-size: 18px;
     }
 }
+
+@media (max-width: 360px) {
+    .container {
+      padding: 5px;
+    }
+  
+    .section-title {
+      font-size: 16px;
+      margin: 20px auto 0 auto;
+    }
+  
+    .profile {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      gap: 10px;
+      padding: 8px;
+    }
+  
+    .profile-image {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+  
+    .bio h1 {
+      font-size: 18px;
+    }
+  
+    .bio p {
+      font-size: 12px;
+    }
+  
+    .action-btn, .contact-btn {
+      width: 100%;
+      padding: 6px;
+      font-size: 12px;
+    }
+  
+    .faq {
+      padding: 8px;
+    }
+  
+    .faq-item {
+      padding: 6px;
+    }
+  
+    .faq-question h3 {
+      font-size: 14px;
+    }
+  
+    .faq-answer {
+      font-size: 12px;
+    }
+  
+    .toggle-icon {
+      font-size: 14px;
+    }
+  }
+  

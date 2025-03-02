@@ -26,7 +26,7 @@ export class PortAboutComponent {
     {
       question: 'What kind of projects worked on?',
       answer:
-        'Contributed to projects involving automation platform developmentwith ANgular and React which reduce the repetive work through automation, workflow management, and API portals, focusing on improving efficiency, user experience, and system scalability.',
+        'Contributed to projects involving automation platform Netbots development with Angular and React which reduce the repetive work through automation, workflow management, and API portals, focusing on improving efficiency, user experience, and system scalability.',
       isOpen: false,
     },
     {

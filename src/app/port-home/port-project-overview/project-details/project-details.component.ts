@@ -20,13 +20,13 @@ export class ProjectDetailsComponent implements OnInit {
       description: 'A full-fledged LinkedIn clone with user authentication, job postings, and a sleek UI built with Angular and Next.js.' 
     },
     { 
-      image: 'assets/Icons/gym mockup.avif', 
+      image: 'assets/Icons/gymimage.jpg', 
       title: 'Muscle Garage Portfolio', 
       tags: ['Angular', 'Material UI'], 
       description: 'A modern and dynamic fitness portfolio showcasing gym services, schedules, and client testimonials with Material UI.' 
     },
     { 
-      image: 'assets/Icons/specch mockup.jpg', 
+      image: 'assets/Icons/speechimage.jpg', 
       title: 'Speech Emotion Recognition', 
       tags: ['Python', 'AI & ML'], 
       description: 'An AI-powered system that detects emotions from speech patterns, leveraging deep learning and NLP models.' 

@@ -298,7 +298,6 @@
         font-size: 14px;
         padding: 10px 20px;
         border-radius: 80px;
-        top: 40px;
     }
 
     .contact-container::before {
@@ -322,3 +321,84 @@
         height: 2px;
     }
 }
+/* For screens 480px and smaller */
+@media (max-width: 480px) {
+    .hero {
+      height: 100vh;
+      padding: 20px;
+    }
+  
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .name {
+      font-size: 36px;
+      top: 25px;
+    }
+  
+    .role {
+      font-size: 14px;
+      top: 30px;
+    }
+  
+    .social-icons {
+      gap: 15px;
+      top: 40px;
+    }
+  
+    .social-icon {
+      width: 25px;
+      height: 25px;
+      padding: 8px;
+    }
+  
+    .contact-button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  
+    .down-arrow {
+      font-size: 24px;
+    }
+  }
+  
+  /* For screens 360px and smaller */
+  @media (max-width: 360px) {
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .name {
+      font-size: 28px;
+      top: 20px;
+    }
+  
+    .role {
+      font-size: 12px;
+      top: 25px;
+    }
+  
+    .social-icons {
+      gap: 10px;
+      top: 30px;
+    }
+  
+    .social-icon {
+      width: 20px;
+      height: 20px;
+      padding: 6px;
+    }
+  
+    .contact-button {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  
+    .down-arrow {
+      font-size: 20px;
+    }
+  }
+  
