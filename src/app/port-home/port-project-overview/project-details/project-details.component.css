@@ -123,6 +123,7 @@
     backdrop-filter: blur(10px);
     transition: background 0.3s ease-in-out;
 }
+Fixed_UI_action
 
 .social-icons:hover {
     background: rgba(255, 255, 255, 0.2);
